@@ -726,22 +726,6 @@
                 y: 40, opacity: 0, duration: 0.8, ease: "power2.out"
             });
         });
-        
-        // Stagger the curriculum items
-        gsap.set(".day-row", { x: 0, opacity: 1 }); // Set initial state to prevent shifts
-        gsap.from(".day-row", {
-            scrollTrigger: { 
-                trigger: ".curriculum-list", 
-                start: "top 80%",
-                toggleActions: "play none none none"
-            },
-            x: -30, 
-            opacity: 0, 
-            duration: 0.6, 
-            stagger: 0.15, 
-            ease: "power2.out",
-            immediateRender: false
-        });
     </script>
 </body>
 </html>
