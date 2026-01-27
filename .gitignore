@@ -21,6 +21,13 @@ Thumbs.db
 *.log
 npm-debug.log*
 
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
 # Temporary files
 *.tmp
 *.temp
