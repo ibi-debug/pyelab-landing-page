@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The PyeLab Intensive | Plan Your Exit Like a Bo$$</title>
+    <meta name="description" content="The 5-Step Strategic Framework to Claim Your Talent and Command Your Exit. Join the PyeLab Intensive.">
+    
+    <meta property="og:title" content="The PyeLab Intensive">
+    <meta property="og:description" content="Plan Your Exit Like a Bo$$. 5 Days to CEO.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* BRAND COLORS */
+            --py-hero-purple: #5b2c9d;
+            --py-hero-deep: #3a1a67;
+            --py-hero-glow: #7f56d0;
+            --py-cream: #fffdf6;
+            --py-dark-text: #2c1750;
+            --py-light-purple: #dcd6ff;
+            
+            /* Accent Colors */
+            --accent-color: #D4AF37; /* Gold */
+            --secondary-color: #4a148c; /* Deep Purple */
+            
+            /* FONTS */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { 
+            scroll-behavior: smooth; 
+            overflow-x: hidden; 
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: #444;
+            line-height: 1.7;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* --- TYPOGRAPHY UTILITIES --- */
+        h1, h2, h3, .tier-name, .hero-headline {
+            font-family: var(--font-heading);
+            letter-spacing: 0px; 
+            line-height: 1.1;
+        }
+        
+        h1, h2, h3 { color: var(--py-dark-text); }
+        
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(32px, 4vw, 48px);
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--py-hero-purple);
+            text-transform: none; 
+            font-style: italic; 
+        }
+
+        .section-sub {
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            color: #666;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* --- BUTTONS --- */
+        .btn {
+            display: inline-block;
+            padding: 18px 45px;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: none;
+            position: relative;
+            text-align: center;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--accent-color), #FFD700);
+            color: #000;
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(212, 175, 55, 0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--py-hero-purple);
+            color: var(--py-hero-purple);
+            width: 100%; 
+        }
+        
+        .btn-outline:hover {
+            background: var(--py-hero-purple);
+            color: #fff;
+        }
+        
+        .btn-vip {
+            background: var(--accent-color); 
+            color: #000;
+            width: 100%;
+        }
+        .btn-vip:hover { background: #fff; }
+
+          /* --- HERO SECTION (UPDATED) --- */
+          .hero {
+              position: relative;
+              min-height: 95vh;
+              display: flex;
+              align-items: center;
+              /* CHANGE 1: Move content start (Left) instead of Center */
+              justify-content: flex-start; 
+              /* CHANGE 2: Align Text Left */
+              text-align: left;
+              color: #fff;
+              background: url('Brand%20Aestetics%20/headshots/Sydonie%20(5).png') no-repeat;
+              background-size: cover; 
+              /* CHANGE 3: Anchor image to the RIGHT so face stays visible on right side */
+              background-position: right center; 
+              padding: 80px 5%; /* Use % padding to be responsive */
+          }
+
+         /* Luxury Dark Overlay - Adjusted Gradient */
+         .hero::before {
+             content: '';
+             position: absolute;
+             top: 0; left: 0; width: 100%; height: 100%;
+             /* Darker on the left (behind text), clearer on the right (over face) */
+             background: linear-gradient(90deg, rgba(58, 26, 103, 0.95) 0%, rgba(58, 26, 103, 0.8) 40%, rgba(106, 70, 154, 0.2) 100%);
+             z-index: 1;
+         }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            /* CHANGE 4: Restrict width to 600px so it doesn't overlap the face on the right */
+            max-width: 650px; 
+            animation: fadeIn 1.5s ease-out;
+        }
+
+         .badge {
+             display: inline-block;
+             border: 1px solid var(--accent-color);
+             color: var(--accent-color);
+             padding: 8px 20px;
+             border-radius: 50px;
+             font-size: 0.8rem;
+             letter-spacing: 2px;
+             text-transform: uppercase;
+             margin-bottom: 25px;
+             background: rgba(0,0,0,0.3);
+             backdrop-filter: blur(5px);
+         }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 72px);
+            margin-bottom: 20px;
+            color: #fff;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+         .hero-subhead {
+             font-size: clamp(20px, 3vw, 28px);
+             font-family: var(--font-heading);
+             font-style: italic;
+             color: var(--accent-color);
+             margin-bottom: 30px;
+             font-weight: 400;
+         }
+
+        .hero-framework {
+            font-size: 1.1rem;
+            color: var(--py-light-purple);
+            margin-bottom: 40px;
+            max-width: 600px;
+            /* Remove auto margins since we are left aligning now */
+            margin-left: 0; 
+            margin-right: 0;
+        }
+
+        .hero-meta {
+            margin-top: 30px;
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            display: flex;
+            /* CHANGE 5: Align meta items to start (left) */
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* --- HOOK SECTION --- */
+        .hook { padding: 100px 0; background: #fff; }
+        .hook-content { max-width: 800px; margin: 0 auto; text-align: left; }
+        
+        .hook p { margin-bottom: 25px; font-size: 1.15rem; color: #444; }
+        
+         .highlight-box {
+             background: var(--py-cream);
+             border-left: 4px solid var(--accent-color);
+             padding: 30px;
+             margin-top: 40px;
+             border-radius: 0 10px 10px 0;
+         }
+         
+         .highlight-box p { 
+             margin-bottom: 0; 
+             font-weight: 600; 
+             color: var(--secondary-color);
+             font-family: var(--font-heading);
+             font-size: 1.3rem;
+         }
+
+         /* --- FRAMEWORK SECTION --- */
+         .framework {
+             padding: 100px 0;
+             background-color: #f9f9f9;
+             background-image: 
+                 linear-gradient(rgba(106, 70, 154, 0.05) 1px, transparent 1px),
+                 linear-gradient(90deg, rgba(106, 70, 154, 0.05) 1px, transparent 1px);
+             background-size: 40px 40px;
+         }
+
+        .curriculum-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .day-row {
+            background: #fff;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(106, 70, 154, 0.05);
+            transition: transform 0.3s;
+            border-radius: 8px;
+        }
+
+         .day-row:hover {
+             transform: translateX(10px);
+             border-left: 4px solid var(--py-hero-glow);
+         }
+ 
+         .day-badge {
+             background: var(--py-hero-deep);
+             color: #fff;
+             padding: 10px 0;
+             width: 80px;
+             text-align: center;
+             font-weight: 700;
+             font-size: 0.9rem;
+             flex-shrink: 0;
+             border-radius: 4px;
+         }
+ 
+         .day-content h3 { font-size: 1.4rem; margin-bottom: 5px; color: var(--py-hero-purple); }
+        .day-content p { margin: 0; font-style: italic; color: #777; }
+
+         /* --- PRICING SECTION --- */
+         .pricing { 
+             padding: 100px 0; 
+             background: radial-gradient(circle at top right, #f9f9f9, #e6e1f0);
+         }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 50px;
+            align-items: center;
+        }
+
+         .price-card {
+             background: rgba(255, 255, 255, 0.7); 
+             backdrop-filter: blur(10px);
+             -webkit-backdrop-filter: blur(10px);
+             border: 1px solid rgba(255, 255, 255, 0.8);
+             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+             padding: 40px 30px;
+             text-align: center;
+             border-radius: 15px;
+             transition: all 0.3s;
+             position: relative;
+             height: 100%;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+         }
+ 
+         .price-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+ 
+         .price-card.vip {
+             background: var(--py-hero-deep);
+             color: #fff;
+             padding: 60px 30px;
+             box-shadow: 0 25px 50px rgba(58, 26, 103, 0.25);
+             border: none;
+             z-index: 10;
+             transform: scale(1.05);
+         }
+ 
+         .price-card.vip h3 { color: #fff; }
+         .price-card.vip .price { color: var(--accent-color); }
+         .price-card.vip li { border-bottom: 1px solid rgba(255,255,255,0.1); color: #ddd; }
+         .price-card.vip li::before { color: var(--accent-color); }
+
+        .tier-title {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #999;
+        }
+        
+         .price-card.vip .tier-title { color: var(--accent-color); }
+ 
+         .price {
+             font-family: var(--font-heading);
+             font-size: 3.5rem;
+             color: var(--py-dark-text);
+             margin-bottom: 20px;
+             line-height: 1;
+         }
+ 
+         .features {
+             list-style: none;
+             text-align: left;
+             margin: 30px 0;
+             font-size: 0.95rem;
+         }
+ 
+         .features li {
+             padding: 12px 0;
+             border-bottom: 1px solid #f5f5f5;
+             position: relative;
+             padding-left: 25px;
+         }
+ 
+         .features li::before {
+             content: '✓';
+             position: absolute;
+             left: 0;
+             color: var(--py-hero-purple);
+             font-weight: bold;
+         }
+
+        /* --- ABOUT & FAQ --- */
+        .about { padding: 100px 0; background: var(--py-cream); }
+        .about-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+        
+        .about-img-frame {
+            border: 1px solid var(--accent-color);
+            padding: 15px;
+            transform: rotate(-2deg);
+        }
+        
+        .about-img { width: 100%; display: block; filter: grayscale(20%); transition: 0.5s; }
+        .about-img:hover { filter: grayscale(0%); }
+
+        .quote-block {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            margin-bottom: 30px;
+        }
+
+        .faq { padding: 80px 0; background: #fff; }
+        .faq-item { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        .faq-q { font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 10px; color: var(--py-hero-glow); }
+
+        footer { background: var(--py-hero-deep); color: #bbb; padding: 40px 0; text-align: center; font-size: 0.8rem; }
+
+         /* --- RESPONSIVE QUERIES --- */
+         
+         /* Desktop - Adjust image positioning to move face to the left and down */
+         @media (min-width: 969px) {
+             .hero {
+                 background-position: right bottom; /* Anchors image to the right bottom, moves it all the way down */
+                 background-size: 50%; /* Zoom in the image on desktop */
+                 justify-content: center; /* Center the content */
+                 text-align: center; /* Center the text */
+             }
+             
+             .hero-content {
+                 margin: 0 auto; /* Center the content container */
+             }
+             
+             .hero-framework {
+                 margin-left: auto;
+                 margin-right: auto;
+             }
+             
+             .hero-meta {
+                 justify-content: center; /* Center the meta items */
+             }
+             
+             .hero h1 {
+                 line-height: 1.1;
+                 white-space: pre-line;
+             }
+         }
+         
+         /* Tablet & Smaller Desktop */
+         @media (max-width: 968px) {
+             /* Reset to Center for Mobile/Tablet */
+             .hero {
+                 min-height: 85vh;
+                 background-position: center center;
+                 text-align: center;
+                 justify-content: center;
+             }
+             
+             .hero-content {
+                 max-width: 100%;
+             }
+             
+             .hero-meta {
+                 justify-content: center;
+             }
+             
+             /* Darker overlay on mobile to ensure readability over face */
+             .hero::before {
+                 background: linear-gradient(135deg, rgba(58, 26, 103, 0.95) 0%, rgba(106, 70, 154, 0.85) 100%);
+             }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                gap: 40px;
+            }
+            
+            .price-card.vip {
+                transform: scale(1);
+            }
+            
+            .about-wrapper {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-img-frame {
+                max-width: 400px;
+                margin: 0 auto;
+                transform: rotate(0deg);
+            }
+            
+            .about-text {
+                text-align: center;
+            }
+        }
+        
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hook, .framework, .pricing, .about, .faq {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .day-row {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .day-badge {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            
+            .day-row:hover {
+                transform: none; /* Disable hover movement on touch devices */
+            }
+            
+            .highlight-box {
+                padding: 20px;
+                border-left-width: 3px;
+            }
+            
+            .highlight-box p {
+                font-size: 1.1rem;
+            }
+        }
+
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">The PyeLab Intensive</span>
+            
+            <h1>Your Excellence<br>Is Not A&nbsp;Donation.</h1>
+            
+            <h2 class="hero-subhead">Plan Your Exit Like a Bo$$: The PyeLab Intensive.</h2>
+            
+            <p class="hero-framework">The PYELAB: Your 5-Step Strategic Framework to Claim Your Talent and Command Your Exit.</p>
+            
+            <a href="#pricing" class="btn btn-gold">CLAIM MY SLICE</a>
+            
+            <div class="hero-meta">
+                <span>Jan 26 – 30, 2026</span>
+                <span>•</span>
+                <span>12 PM ET</span>
+                <span>•</span>
+                <span>Virtual Lab</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hook">
+        <div class="container">
+            <h2 class="section-title">You’ve built a seat at a table you don’t own.</h2>
+            <div class="hook-content">
+                <p>You are the engine. You are the "fixer." You are the one who ensures the targets are met and the systems stay standing. You’ve spent years mastering the corporate game, but as we stand at the start of a new year, the most important question isn’t how much more you can give them—it’s how you intend to reclaim what belongs to you.</p>
+                <p>Whether your "Exit Date" is in 60 days or 24 months, a transition of this magnitude requires more than a resignation letter. It requires a Blueprint.</p>
+                
+                <div class="highlight-box">
+                    <p>Welcome to The PyeLab. In this 5-day intensive, we treat your career and your future business like a science. We aren't just "dreaming" about freedom; we are engineering it with precision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="framework">
+        <div class="container">
+            <h2 class="section-title">The 5-Day Curriculum</h2>
+            <div class="section-sub">From Asset to CEO: The Strategic Breakdown</div>
+            
+            <div class="curriculum-list">
+                <div class="day-row">
+                    <div class="day-badge">DAY 01</div>
+                    <div class="day-content">
+                        <h3>The Audit (Time Alchemy)</h3>
+                        <p>The Goal: Stop being "time-poor" for the sake of others.</p>
+                    </div>
+                </div>
+                
+                <div class="day-row">
+                    <div class="day-badge">DAY 02</div>
+                    <div class="day-content">
+                        <h3>The Freedom Number (The QUIT Formula)</h3>
+                        <p>The Goal: Fear lives in vague numbers; confidence lives in the calculator.</p>
+                    </div>
+                </div>
+                
+                <div class="day-row">
+                    <div class="day-badge">DAY 03</div>
+                    <div class="day-content">
+                        <h3>The One Offer (Yield Analysis)</h3>
+                        <p>The Goal: High-achievers over-complicate. We identify the single highest-yield asset you possess.</p>
+                    </div>
+                </div>
+                
+                <div class="day-row">
+                    <div class="day-badge">DAY 04</div>
+                    <div class="day-content">
+                        <h3>The CEO Bridge (Pressure Testing)</h3>
+                        <p>The Goal: De-risk your jump. Validate before you vaccinate.</p>
+                    </div>
+                </div>
+                
+                <div class="day-row">
+                    <div class="day-badge">DAY 05</div>
+                    <div class="day-content">
+                        <h3>The EXIT Blueprint (The Contract)</h3>
+                        <p>The Goal: Assemble the slices: a written Exit Blueprint and a signed contract with yourself to officially move from corporate asset to CEO.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Choose Your Tier</h2>
+            
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div>
+                        <div class="tier-title">General Lab</div>
+                        <div class="price">$47</div>
+                        <ul class="features">
+                            <li>Full 5-Day Live Challenge</li>
+                            <li>The PyeLab Digital Workbook</li>
+                            <li>Freedom Number Calculator</li>
+                            <li>Access expires in 7 days</li>
+                        </ul>
+                    </div>
+                    <a href="https://buy.stripe.com/dRm00jeKz1dYdXe50GbjW04" target="_blank" class="btn btn-outline">SELECT GENERAL</a>
+                </div>
+
+                <div class="price-card vip">
+                    <div>
+                        <div class="tier-title">Most Popular</div>
+                        <h3>VIP Lab</h3>
+                        <div class="price">$147</div>
+                        <ul class="features">
+                            <li>Full 5-Day Live Challenge</li>
+                            <li>The PyeLab Digital Workbook</li>
+                            <li>Freedom Number Calculator</li>
+                            <li><strong>Daily Live 30-min Q&A "Hot Seats"</strong></li>
+                            <li>The "Bo$$" Resignation Vault</li>
+                            <li><strong>Lifetime Access to Replays</strong></li>
+                        </ul>
+                    </div>
+                    <a href="https://buy.stripe.com/dRm4gz0TJ5ue5qIgJobjW05" target="_blank" class="btn btn-vip">SELECT VIP</a>
+                </div>
+
+                <div class="price-card">
+                    <div>
+                        <div class="tier-title">Executive Lab</div>
+                        <div class="price">$297</div>
+                        <ul class="features">
+                            <li>Full 5-Day Live Challenge</li>
+                            <li>The PyeLab Digital Workbook</li>
+                            <li>Freedom Number Calculator</li>
+                            <li>All VIP Access Benefits</li>
+                            <li>The Implementation Toolkit</li>
+                            <li><strong>1:1 Strategy "Exit Audit" (20 min)</strong></li>
+                        </ul>
+                    </div>
+                    <a href="https://buy.stripe.com/dRm00j0TJg8S06obp4bjW06" target="_blank" class="btn btn-outline">SELECT EXECUTIVE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About Your Exit Coach</h2>
+            <div class="about-wrapper">
+                <div class="about-img-frame">
+                    <img src="assets/headshots/sydonie SWAN.png" alt="Sydonie Neysmith" class="about-img" onerror="this.src='https://placehold.co/600x600/6a469a/ffffff?text=Sydonie+Neysmith'">
+                </div>
+                <div class="about-text">
+                    <div class="quote-block">
+                        "Leadership is not just about how you show up at work; it’s about how you show up for yourself. You’ve been the engine for everyone else’s machine for long enough. It’s time to build your own. I’ll see you in the Lab."
+                    </div>
+                    <p><strong>— Sydonie Neysmith</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-q">When does the Lab meet?</div>
+                <p>Daily at 12 PM ET / 9 AM PT from Jan 26–30.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">What if I can't attend live?</div>
+                <p>VIP and Executive tiers receive lifetime replays. General Admission has 7-day access.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-q">Is this for me if I'm already in business?</div>
+                <p>Yes. If your business feels like a job you can't leave, we are going to slice it up and re-engineer it for yield and freedom.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Strategic Women Alliance Network (SWAN). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate elements on scroll
+        gsap.utils.toArray("section").forEach(section => {
+            gsap.from(section, {
+                scrollTrigger: { trigger: section, start: "top 85%" },
+                y: 40, opacity: 0, duration: 0.8, ease: "power2.out"
+            });
+        });
+        
+        // Stagger the curriculum items
+        gsap.from(".day-row", {
+            scrollTrigger: { trigger: ".curriculum-list", start: "top 80%" },
+            x: -30, opacity: 0, duration: 0.6, stagger: 0.15, ease: "power2.out"
+        });
+    </script>
+</body>
+</html>
